@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	  <meta name="applicable-device" content="pc,mobile">
+	  <meta name="keywords" content="jeep">
+	  <meta name="description" content="jeep">
+	  <meta name="viewport"
+			content="width=device-width, initial-scale=1.0, user-scalable=no">
+	  <meta http-equiv="X-UA-COMPATIBLE" content="IE=Edge,chrome=1">
+	<title>登录</title>
+	<link rel="stylesheet" href="../plugin/LHYAlertView.css">
+	<link rel="stylesheet" href="../css/normalized.css">
+	<link rel="stylesheet" href="../css/login-register.css">
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/common.css">
+</head>
+<body>
+<!-- 头部 -->
+<div class="cb-nhead">
+	<div class="cb-ntop w990">
+		<div class="nmate-u">
+			<div class="mate-active fr">
+				<div class="mate-u camel-header">
+					<a href="../pages/login.html" class="login">会员登录</a><a class="hyinun" style="display:none;">欢迎您</a> |
+					<a href="../pages/register.html" class="regist">注册</a><a href="#" class="logout" style="display:none;">注销</a> |
+					<a href="#">防伪查询</a>
+				</div>
+				<div class="mate-s clearfix">
+					<form id="form1" method="get" action="/portal/newsList.aspx">
+						<input type="inp" name="keyword" class="ms-txt fl"/>
+						<input type="submit" class="ms-btn fl" value=""/>
+					</form>
+				</div>
+			</div>
+			<div class="mate-share fr">
+				<ul>
+					<li class="pr wx2wm-el">
+						<a href="#"><img src="../images/wx_05.gif" alt=""/></a>
+						<div class="wx2wm pa" style="display: none;">
+							<img src="../images/wechat.png" width="70" height="68" alt=""/>
+						</div>
+					</li>
+					<li><a href="#"><img src="../images/wb_07.gif" alt=""/></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="nlogo fl">
+			<a href="../index.html"><img src="../images/nlogo_02.png" alt=""/></a>
+		</div>
+		<ul class="head-nav">
+			<li class="item"><a href="../pages/in regard to.html" class="">关于CAMEL</a></li>
+			<li class="item"><a href="../pages/news.html" class="">新闻中心</a><span class="hot"></span></li>
+			<li class="item"><a href="../pages/product.html" class="">产品中心</a></li>
+			<li class="item"><a href="../pages/join.html" class="">招商加盟</a></li>
+			<!--<li class="item"><a href="#" class="">终端形象</a></li>-->
+			<li class="item"><a href="../pages/shop.html" class="">官方商城</a></li>
+			<li class="item"><a href="../pages/outdoors .html" class="">户外俱乐部</a></li>
+			<li class="item"><a href="../pages/recruit.html" class="">招募精英</a></li>
+			<li class="item"><a href="../pages/contact.html" class="">联系我们</a></li>
+		</ul>
+	</div>
+</div>
+<!-- 内容 -->
+<main class="contentd">
+		<form action="#" name="myForm">
+			<section class="input-box" data-msg="用户名格式不正确，4到16位（字母，数字，下划线，减号）">
+				<input class="username" type="text" placeholder="请输入用户名">
+			</section>
+			<section class="input-box" data-msg="密码不对，4到16位（字母，数字，下划线，减号）">
+				<input class="password" type="password" placeholder="请输入密码">
+			</section>
+			<section class="input-box register hidden" data-msg="邮箱格式不正确">
+				<input class="email" type="email" placeholder="请输入邮箱">
+			</section>
+			<section class="input-box register hidden" data-msg="电话号码不正确">
+				<input class="tel" type="tel" placeholder="请输入电话">
+			</section>
+			<div class="info-box clearFix">
+				<div class="fl remember-box login">
+					<input class="remember" type="checkbox">
+					<span>记住密码？</span>
+				</div>
+			</div>
+			<button class="login-register-btn" type="button">登陆</button>
+		</form>
+	</main>
+<!-- 尾部 -->
+<div class="cb-foot " >
+	<div class="sub-nav w1200">
+		<ul class="snav clearfix">
+			<li class="item">
+				<h3>探索</h3>
+				<p><a href="#">户外</a></p>
+				<p><a href="#">男鞋</a></p>
+				<p><a href="#">女鞋</a></p>
+				<p><a href="#">童装</a></p>
+				<p><a href="#">男装</a></p>
+			</li>
+			<li class="item">
+				<h3>关于我们</h3>
+				<p><a href="#">关于CAMEL</a></p>
+				<p><a href="#">招商加盟</a></p>
+				<p><a href="#">联系我们</a></p>
+			</li>
+			<li class="item">
+				<h3>公司信息</h3>
+				<p><a href="#">在CAMEL的职业发展</a></p>
+				<p><a href="#">关于CAMEL</a></p>
+				<p><a href="#">防伪查询</a></p>
+				<p><a href="#">媒体</a></p>
+			</li>
+			<li class="item subscrit">
+				<h3>订阅通讯</h3>
+				<p>注册邮箱获取新闻</p>
+				<div class="subscri-box">
+					<input id="txtSubscribeEmail" type="inp" class="txt"/>
+					<input type="button" class="btn" value="订阅" onclick="subscribe()"/>
+				</div>
+			</li>
+		</ul>
+	</div>
+<div class="copyright">
+		法律声明 隐私条款 <a href="#" >粤ICP备16019683号-1</a> ©2016 camelvip.com
+</div>
+</div>
+</body>
+<script src="../plugin/LHYAlertView.js"></script>
+<script src="../plugin/jquery-3.3.1.min.js"></script>
+<script src="../plugin/bmob-min.js"></script>
+<script src="../js/validate.js"></script>
+<script src="../js/login-register.js"></script>
+<script type="text/javascript">
+    location.hash = "login";
+</script>
+</html>

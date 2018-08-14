@@ -1,0 +1,110 @@
+@charset "UTF-8";
+html,body,div,p,span,a,ul,li{
+    margin: 0;
+    padding: 0;
+}
+.nav  h1,h3{
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    margin: 20px;
+    color: #333;
+}
+main,nav {
+    display: block
+}
+ul,li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.nav {
+    font-family: Arial,宋体,Verdana, sans-serif ,'Times New Roman';
+}
+/* 手风琴 */
+.sub_nav {
+    width: 100%;
+}
+.sub_nav_title {
+    position: relative;
+    width: inherit;
+    height: 50px;
+    color: #333;
+    text-indent: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 50px;
+    border-bottom: 1px solid #999;
+    cursor: pointer;
+} 
+.sub_nav_title img {
+    width: 64px;
+    height: 28px;
+    padding-right: 10px;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    margin: -12px;
+    -webkit-transition: all 1s linear;
+    transition: all 1s linear;
+    display: block;
+}
+
+.sub_nav_content {
+    display: none;
+    width: inherit;
+    min-height: 30px;
+    border: 1px solid #333;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    line-height: 30px;
+    padding: 10px;
+    font-size: 12px;
+}
+
+
+/* 尾部 */
+.sub_na {
+    text-align: center;
+    margin: 10px auto;
+}
+.nav{
+    width:800px;
+    margin:0 auto;
+}
+.foot p{
+    text-align: center;
+    color: #000;
+}
+.foot{
+    margin-bottom: 10px;
+    margin: 20px auto;
+
+}
+.foot h3{
+    text-align: center;
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

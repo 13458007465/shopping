@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+html,body{
+    margin: 0;
+    padding: 0;
+}
+ .contact h2{
+    font-size: 18px;
+    color: #474747;
+    margin-top: 30px;
+    font-weight: bold;
+    text-align: center;
+    font-family: '微软雅黑','黑体';
+}
+.content p {
+    font-size: 14px;
+    margin-top: 20px;
+    color: #333;
+    display: block;
+    text-align: center;
+}
+.cb-foot{
+    margin-top: 240px;
+}
+
